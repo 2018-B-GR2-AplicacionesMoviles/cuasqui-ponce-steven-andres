@@ -33,7 +33,7 @@ fun main(args:Array<String>){
 
     val sueldoTotal =calcularsueldo(bono)
     println(sueldoTotal)
-    val adrian=Usuario("Steven")
+    val adrian=Usuario("Steven", "Cuasqui", "Ponce")
     println(adrian.toString())
 
 }
@@ -47,14 +47,22 @@ fun saludar():Unit{
     println("Hola mundo")
 }
 
-class Usuario{
-    public var nombre:String
+class Usuario(public var nombre:String){ //1er constructor
+    public var apellido: String? =null
+    public var apellidoMaterno: String?=null
 
+    constructor(vNombre:String,vApellido:String,vApellidoMaterno:String):this(vNombre){ //2do, 3ro,4to
+        this.apellido=vApellido
+        apellidoMaterno=vApellidoMaterno
+    }
+    /*
     constructor(vNombre:String){
         nombre=vNombre
     }
-
+    */
     override fun toString():String{
-        return "Hola ${this.nombre}"
+        val apellidoMay = if (!apellido.isNullOrBlank()) this.apellido?.toUpperCase() else ""
+        val apellidoMat = if (!apellidoMaterno.isNullOrBlank()) this.apellidoMaterno?.toUpperCase() else ""
+        return "Hola $nombre $apellidoMay $apellidoMaterno"
     }
 }

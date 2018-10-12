@@ -36,6 +36,12 @@ fun main(args:Array<String>){
     val adrian=Usuario("Steven", "Cuasqui", "Ponce")
     println(adrian.toString())
 
+    println(BaseDeDatos.Usuarios)
+    BaseDeDatos.agregarUsuario("Steven")
+    println(BaseDeDatos.Usuarios)
+
+
+
 }
 
 fun calcularsueldo(bono:Double):Double{
@@ -95,3 +101,12 @@ class Ejemplo{
 }
 
 val ejemplo =Ejemplo("Steven")
+
+class BaseDeDatos{
+    companion object {
+        var Usuarios:ArrayList<String> = ArrayList()
+                fun agregarUsuario(nombre:String){
+                    Usuarios.add(nombre)
+                }
+    }
+}

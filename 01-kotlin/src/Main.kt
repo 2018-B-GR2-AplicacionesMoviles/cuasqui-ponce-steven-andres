@@ -66,3 +66,32 @@ class Usuario(public var nombre:String){ //1er constructor
         return "Hola $nombre $apellidoMay $apellidoMaterno"
     }
 }
+
+open class Animal(var nombre:String){
+
+}
+
+class Tortuga(nombre:String,var pesoCaparazon:Double):Animal("Mario"){
+
+    init{
+        println("$nombre $pesoCaparazon")
+    }
+
+}
+
+var animal=Animal("Caballo")
+var george=Tortuga("George",12.5)
+
+class Ejemplo{
+    var nombre:String
+
+    constructor(nNombre:String){
+        println("Estoy en el constructor")
+        nombre=nNombre
+    }
+    init{
+        println("estoy en el init")
+    }
+}
+
+val ejemplo =Ejemplo("Steven")

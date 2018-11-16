@@ -17,7 +17,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".ButtonActivity" />
-        <activity android:name=".ActivityFinal"></activity>
+        <activity android:name=".ActivityFinal" />
+        <activity android:name=".IntentRespuestaActivity" />
+        <activity android:name=".ResultadoPropioActivity"></activity>
     </application>
 
 </manifest>

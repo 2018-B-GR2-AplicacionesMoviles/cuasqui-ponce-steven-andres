@@ -10,23 +10,9 @@ class ButtonActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_button)
 
-        boton_siguiente
-                .setOnClickListener {
-                    /*
-                    Log.i("navegacion","Hola")
-                    Log.w("navegacion","Hola")
-                    Log.d("navegacion","Hola")
-                    Log.e("navegacion","Hola")
-                    Log.v("navegacion","Hola")
-                    */
-                    this.irAPantallaFinal()
-                }
+
 
 
     }
-    fun irAPantallaFinal() {
-        // INTENT
-        val intentIrABotonfinal = Intent(this, ActivityFinal::class.java)
-        this.startActivity(intentIrABotonfinal)
-    }
+
 }

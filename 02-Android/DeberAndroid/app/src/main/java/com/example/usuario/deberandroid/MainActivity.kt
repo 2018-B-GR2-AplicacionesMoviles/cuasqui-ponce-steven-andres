@@ -31,6 +31,11 @@ class MainActivity : AppCompatActivity() {
 
             }
 
+        boton_imagen
+                .setOnClickListener{
+                    irPantallaLectura()
+                }
+
         check_notif
             .setOnClickListener{
                 if(check_notif.isChecked==true){
@@ -48,8 +53,9 @@ class MainActivity : AppCompatActivity() {
         this.startActivity(intentIrABotones)
     }
 
-    fun mensajeAdvertencia(){
-
+    fun irPantallaLectura(){
+        val intentIrABotones = Intent(this , ActivityLecture::class.java)
+        this.startActivity(intentIrABotones)
     }
 
 }

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityLecture">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="382dp"
+        android:layout_height="277dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:text="Kotlin se empezó a desarrollar hace casi 6 años de la mano de Jetbrain, compañía responsable de IntelliJ el IDE en el que se basa Android Studio. Su idea inicial era sustituir Java en los proyectos desarrollados por la compañía. Era fundamental basarse en la JVM para poder ser totalmente interoperable a Java y su ecosistema.
+
+Los principios de Kotlin son:
+
+Sencillo y pragmático. Debía ser un lenguaje potente a par que fácil de utilizar. La curva de aprendizaje es bastante más ligera que otros lenguajes como Scala, por ejemplo. Lo que apoya su adopción.
+
+Es interoperable al 100% con Java. Cualquier código escrito en Java se puede usar directamente desde Kotlin.
+
+Para que Android pudiera adoptarlo, el lenguaje debía ser ligero para poder ser ejecutado en cualquier dispositivo sin sobrepasar el peso específico de las APKs en Android.
+
+A finales de 2015 se consiguió publicar la primera beta de la versión 1.0, aunque ya se estaba trabajando en algunos proyectos, esto certificaba que la cosa iba en serio y se podría usar en un futuro cercano en proyecto en producción. La versión definitiva llegó hace apenas un año.
+
+Cualquier desarrollador que ha seguido el recorrido de Kotlin y ha intentado “vender” internamente en su empresa el uso de Kotlin se ha encontrado en la mayoría de los casos con las reticencias de sus managers. La típica excusa de que Kotlin no está soportado por Google se disipan con este anuncio dando luz verde a los proyectos en producción."
+                app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
+                app:layout_constraintEnd_toEndOf="@+id/scrollView2"
+                app:layout_constraintHorizontal_bias="0.16"
+                app:layout_constraintStart_toStartOf="@+id/scrollView2"
+                app:layout_constraintTop_toTopOf="@+id/scrollView2"
+                app:layout_constraintVertical_bias="0.195" />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

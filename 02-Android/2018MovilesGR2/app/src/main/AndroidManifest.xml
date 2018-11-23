@@ -19,7 +19,10 @@
         <activity android:name=".ButtonActivity" />
         <activity android:name=".ActivityFinal" />
         <activity android:name=".IntentRespuestaActivity" />
-        <activity android:name=".ResultadoPropioActivity"></activity>
+        <activity android:name=".ResultadoPropioActivity" />
+        <activity android:name=".CicloVidaActivity" />
+        <activity android:name=".ParcelableActivity" />
+        <activity android:name=".AdaptadorActivity"></activity>
     </application>
 
 </manifest>

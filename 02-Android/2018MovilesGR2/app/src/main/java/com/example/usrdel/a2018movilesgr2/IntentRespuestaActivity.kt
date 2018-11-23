@@ -81,6 +81,7 @@ class IntentRespuestaActivity : AppCompatActivity() {
             }
         }
     }
+
     companion object {
         val requestCodeContactos = 101
         val requestCodeNombreApellido = 102

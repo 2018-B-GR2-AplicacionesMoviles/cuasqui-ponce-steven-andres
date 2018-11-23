@@ -10,9 +10,9 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="23dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="40dp"
-        android:layout_marginEnd="8dp"
         android:text="@string/textoPrincipal"
         android:textColor="@color/colorGreen"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,9 +23,9 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="44dp"
-        android:layout_marginEnd="8dp"
         android:text="TextView"
         app:layout_constraintEnd_toEndOf="@+id/textView2"
         app:layout_constraintStart_toStartOf="@+id/textView2"
@@ -47,8 +47,8 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="40dp"
+        android:layout_marginTop="8dp"
         android:text="TextView"
         app:layout_constraintBottom_toBottomOf="@+id/textView"
         app:layout_constraintEnd_toStartOf="@+id/textView"
@@ -59,9 +59,9 @@
         android:id="@+id/editText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="44dp"
-        android:layout_marginEnd="8dp"
         android:ems="10"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="@+id/textView3"
@@ -73,20 +73,60 @@
         android:id="@+id/boton_navegar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="60dp"
         android:layout_marginEnd="8dp"
-        android:text="Button"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="Intent Correo"
         app:layout_constraintEnd_toEndOf="@+id/editText"
-        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintHorizontal_bias="0.414"
         app:layout_constraintStart_toStartOf="@+id/editText"
         app:layout_constraintTop_toBottomOf="@+id/editText" />
 
-    <android.support.constraint.Guideline
-        android:id="@+id/guideline"
+    <Button
+        android:id="@+id/button_intent_respuesta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="20dp" />
+        android:layout_marginEnd="36dp"
+        android:layout_marginTop="8dp"
+        android:text="Int Res."
+        app:layout_constraintBottom_toBottomOf="@+id/boton_navegar"
+        app:layout_constraintEnd_toStartOf="@+id/boton_navegar"
+        app:layout_constraintTop_toTopOf="@+id/boton_navegar"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button_ciclo_vida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="C. Vida"
+        app:layout_constraintBottom_toBottomOf="@+id/boton_navegar"
+        app:layout_constraintStart_toEndOf="@+id/boton_navegar"
+        app:layout_constraintTop_toTopOf="@+id/boton_navegar"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button_intent_parcelable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="20dp"
+        android:text="Int. Parcelable"
+        app:layout_constraintEnd_toEndOf="@+id/boton_navegar"
+        app:layout_constraintStart_toStartOf="@+id/boton_navegar"
+        app:layout_constraintTop_toBottomOf="@+id/boton_navegar" />
+
+    <Button
+        android:id="@+id/button_adaptador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="80dp"
+        android:text="Adaptadores"
+        app:layout_constraintEnd_toEndOf="@+id/button_ciclo_vida"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toStartOf="@+id/button_ciclo_vida"
+        app:layout_constraintTop_toBottomOf="@+id/button_ciclo_vida" />
 
 </android.support.constraint.ConstraintLayout>

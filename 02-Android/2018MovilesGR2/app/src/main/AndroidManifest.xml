@@ -22,7 +22,8 @@
         <activity android:name=".ResultadoPropioActivity" />
         <activity android:name=".CicloVidaActivity" />
         <activity android:name=".ParcelableActivity" />
-        <activity android:name=".AdaptadorActivity"></activity>
+        <activity android:name=".AdaptadorActivity" />
+        <activity android:name=".AdaptadorDeberActivity"></activity>
     </application>
 
 </manifest>

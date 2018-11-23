@@ -42,6 +42,19 @@ class MainActivity : AppCompatActivity() {
                 .setOnClickListener {
                     this.irActividadAdaptador()
                 }
+
+        button_adaptador_deber
+                .setOnClickListener {
+                    this.irActividadAdaptadorDeber()
+                }
+    }
+
+    fun irActividadAdaptadorDeber() {
+        val intentAdaptador = Intent(
+                this,
+                AdaptadorDeberActivity::class.java
+        )
+        startActivity(intentAdaptador)
     }
 
     fun irActividadAdaptador() {
